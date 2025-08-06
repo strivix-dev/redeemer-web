@@ -1,0 +1,59 @@
+{
+  "Arrow Function Snippet": {
+    "prefix": "af", // The trigger keyword for the snippet
+    "body": [
+      "interface ${TM_FILENAME_BASE}Props{}",
+      "",
+      "const ${TM_FILENAME_BASE}: AF<${2:${TM_FILENAME_BASE}Props}> = ({}) => {",
+      "  return (",
+      "    <div></div>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "Arrow Function No Props Snippet": {
+    "prefix": "afnp", // The trigger keyword for the snippet
+    "body": [
+      "const ${TM_FILENAME_BASE}: AF = ({}) => {",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "Function Component No Props Snippet": {
+    "prefix": "fcnp", // The trigger keyword for the snippet
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE}: FC = () => {",
+      "  return (",
+      "    <div></div>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "Function Component Snippet": {
+    "prefix": "fc", // The trigger keyword for the snippet
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "interface ${TM_FILENAME_BASE}Props{}",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<${2:${TM_FILENAME_BASE}Props}> = ({}) => {",
+      "  return (",
+      "    <div></div>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Creates a React functional component"
+  }
+}
