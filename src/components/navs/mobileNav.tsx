@@ -1,6 +1,6 @@
 'use client';
 import Logo from '@/assets/logo';
-import { navItems } from '@/constants';
+import { extensionUrl, navItems } from '@/constants';
 import Link from 'next/link';
 import { FC, useState } from 'react';
 import {
@@ -40,19 +40,12 @@ const MobileNav: FC = () => {
           </Link>
         ))}
         <div className="flex w-full flex-col gap-4">
-          <NavbarButton
-            onClick={() => setIsMobileMenuOpen(false)}
+        <NavbarButton
+            onClick={() => window.open(extensionUrl)}
             variant="primary"
-            className="w-full"
+            className="bg-primary text-white border-none text-base"
           >
-            Login
-          </NavbarButton>
-          <NavbarButton
-            onClick={() => setIsMobileMenuOpen(false)}
-            variant="primary"
-            className="w-full"
-          >
-            Book a call
+            Join Us
           </NavbarButton>
         </div>
       </MobileNavMenu>

@@ -34,7 +34,7 @@ export default function RootLayout({
           enableSystem
           attribute="class"
           storageKey="ui-theme"
-          defaultTheme="system"
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <MainLayout>{children}</MainLayout>
