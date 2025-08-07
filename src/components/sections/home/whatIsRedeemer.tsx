@@ -13,7 +13,7 @@ import {
   User,
   Users,
 } from 'lucide-react';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const WhatIsRedeemer = () => {
   const section1Ref = useRef<HTMLDivElement>(null);
@@ -24,6 +24,25 @@ const WhatIsRedeemer = () => {
   const section2InView = useInView(section2Ref);
   const section3InView = useInView(section3Ref);
 
+  const [svgDimensions, setSvgDimensions] = useState({ width: 0, height: 0 });
+  useEffect(() => {
+    const updateDimensions = () => {
+      const height = window.innerHeight * 0.7;
+      const width = height * 0.4805;
+      setSvgDimensions({ width, height });
+    };
+
+    // Call it once on load
+    updateDimensions();
+
+    // Add resize listener
+    window.addEventListener('resize', updateDimensions);
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener('resize', updateDimensions);
+    };
+  }, []);
   return (
     <div className="bg-primary/20">
       <div className="relative flex flex-col lg:flex-row min-h-screen text-foreground max-w-screen-xl mx-auto">
@@ -38,6 +57,8 @@ const WhatIsRedeemer = () => {
             transition={{ duration: 0.5 }}
           >
             <Iphone15Pro
+              width={svgDimensions.width}
+              height={svgDimensions.height}
               className="h-[70vh]"
               videoSrc="/videos/redeemer-video-1.mp4"
             />
@@ -52,6 +73,8 @@ const WhatIsRedeemer = () => {
             transition={{ duration: 0.5 }}
           >
             <Iphone15Pro
+              width={svgDimensions.width}
+              height={svgDimensions.height}
               className="h-[70vh]"
               videoSrc="/videos/redeemer-video-2.mp4"
             />
@@ -66,6 +89,8 @@ const WhatIsRedeemer = () => {
             transition={{ duration: 0.5 }}
           >
             <Iphone15Pro
+              width={svgDimensions.width}
+              height={svgDimensions.height}
               className="h-[70vh]"
               videoSrc="/videos/redeemer-video-3.mp4"
             />
@@ -84,6 +109,8 @@ const WhatIsRedeemer = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Iphone15Pro
+                width={svgDimensions.width}
+                height={svgDimensions.height}
                 className="h-[70vh]"
                 videoSrc="/videos/redeemer-video-1.mp4"
               />
@@ -146,6 +173,8 @@ const WhatIsRedeemer = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Iphone15Pro
+                width={svgDimensions.width}
+                height={svgDimensions.height}
                 className="h-[70vh]"
                 videoSrc="/videos/redeemer-video-2.mp4"
               />
@@ -276,6 +305,8 @@ const WhatIsRedeemer = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Iphone15Pro
+                width={svgDimensions.width}
+                height={svgDimensions.height}
                 className="h-[70vh]"
                 videoSrc="/videos/redeemer-video-3.mp4"
               />

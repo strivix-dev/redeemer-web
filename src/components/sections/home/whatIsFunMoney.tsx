@@ -29,7 +29,7 @@ const WhatIsFunMoney: FC = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }, // Increased text duration
   };
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative overflow-hidden">
       <div className="px-4 md:px-6 max-w-screen-xl mx-auto">
         <div className="grid gap-16 lg:grid-cols-2 items-center max-w-7xl mx-auto">
           <motion.div

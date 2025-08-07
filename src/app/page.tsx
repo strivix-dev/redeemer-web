@@ -1,6 +1,7 @@
 import FinalCTA from '@/components/sections/home/finalCTA';
 import Hero from '@/components/sections/home/hero';
 import OurPartners from '@/components/sections/home/ourPartners';
+import RedeemerShop from '@/components/sections/home/redeemerShop';
 import RedeemerSteps from '@/components/sections/home/redeemerSteps';
 import SavingPhilosophy from '@/components/sections/home/savingPhilosophy';
 import Showcase from '@/components/sections/home/showcase';
@@ -19,6 +20,7 @@ const HomePage: NextPage = () => {
       <RedeemerSteps />
       <WhatIsRedeemer />
       <Testimonials />
+      <RedeemerShop />
       <Showcase />
       <FinalCTA />
     </>

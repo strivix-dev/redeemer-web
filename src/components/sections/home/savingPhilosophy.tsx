@@ -4,10 +4,6 @@ import Image from 'next/image';
 import { FC } from 'react';
 
 const SavingPhilosophy: FC = () => {
-  //   const [isVisible, setIsVisible] = useState(false);
-  //   useEffect(() => {
-  //     setIsVisible(true);
-  //   }, []);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -28,12 +24,8 @@ const SavingPhilosophy: FC = () => {
     visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }, // Increased image duration
   };
 
-  const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }, // Increased text duration
-  };
   return (
-    <section className="py-24 bg-primary/20">
+    <section className="py-24 bg-primary/20 overflow-hidden">
       <div className="px-4 md:px-6 max-w-screen-xl mx-auto">
         <div className="grid gap-16 lg:grid-cols-2 items-center max-w-7xl mx-auto">
           <motion.div

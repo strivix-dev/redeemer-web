@@ -50,20 +50,20 @@ const Petsmart: FC = () => {
         fill="#0068B3"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M20.957 40.261C30.021 36.114 35.347 38.6889 38.264 45.5959C32.255 38.3759 26.588 38.925 20.957 40.261Z"
         fill="#0064B1"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M43.0243 40.113C39.4853 43.144 39.2733 44.893 38.6973 46.782C40.1703 44.672 41.7983 42.879 44.0343 42.336C43.0823 41.595 43.2893 40.854 43.0243 40.113Z"
         fill="#0064B1"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M45.6201 39.668C46.0631 37.526 47.3181 37.888 48.5051 38.038C47.4771 38.445 46.2931 38.532 45.6201 39.668Z"
         fill="#F4F5F7"
       />

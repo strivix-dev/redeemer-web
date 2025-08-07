@@ -23,6 +23,8 @@ export const navItems = [
 export const extensionUrl =
   'https://chromewebstore.google.com/detail/redeemer-cash-back-reward/hchcfdonkmcdkjpbpelfbghlljpjmmib';
 
+export const redeemerShopUrl = 'https://redeemer.shop';
+
 export const socialLinks = [
   {
     href: 'https://www.facebook.com/joinredeemer',
